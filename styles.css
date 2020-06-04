@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    background: rgb(178,139,100);
+    border-radius: 10px;
+    border: grey;
+}
+
+.card-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.image {
+    background-color: rgb(113, 175, 131);
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.card > h3 {
+    margin: 0;
+}
+
+.species {
+    flex-grow: 1;
+}
+
+.diet {
+}
+
+.card > p {
+    align-self: stretch;
+}
+
+.card > h2 {
+    align-self: flex-end;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card-icons {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-icons > span {
+    flex-basis: 50%;
+    font-size: 1.5em;
+}
+
+.card-bookmark {
+    position: absolute;
+    z-index: 900;
+    top: -34px;
+    right: -10px;
+    font-size: 50px;
+}
